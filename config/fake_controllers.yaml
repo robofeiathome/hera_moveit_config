@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_arm_controller
+  - name: fake_manipulator_controller
     type: $(arg fake_execution_type)
     joints:
       - shoulder_pan_joint
@@ -14,7 +14,7 @@ controller_list:
       - gripper_left_joint
       - gripper_right_joint
 initial:  # Define initial robot poses per group
-  - group: arm
-    pose: home
+  - group: manipulator
+    pose: reset
   - group: gripper
     pose: open
