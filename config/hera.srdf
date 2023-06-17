@@ -67,7 +67,7 @@
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.3"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="gripper_ee" parent_link="wrist_lift_link" group="gripper"/>
+    <end_effector name="gripper_ee" parent_link="wrist_lift_link" group="gripper" parent_group="manipulator"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="backrest_link" link2="base" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="base_scan_back" reason="Never"/>
