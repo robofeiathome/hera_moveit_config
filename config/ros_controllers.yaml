@@ -17,6 +17,7 @@ hardware_interface:
     - wrist_lift_joint
     - gripper_left_joint
     - gripper_right_joint
+    - joint_torso_to_torso_sensor_plat
 
   sim_control_mode: 1  # 0: position, 1: velocity
 # Publish all joint states
@@ -25,6 +26,17 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
+  - name: manipulator_controller
+      action_ns: follow_joint_trajectory
+      default: True
+      type: FollowJointTrajectory
+      joints:
+        - shoulder_pan_joint
+        - shoulder_lift_joint
+        - elbow_pan_joint
+        - elbow_lift_joint
+        - wrist_pan_joint
+        - wrist_lift_joint
   - name: gripper_controller
     action_ns: follow_joint_trajectory
     default: True
@@ -32,14 +44,9 @@ controller_list:
     joints:
       - gripper_left_joint
       - gripper_right_joint
-  - name: manipulator_controller
+  - name: zed_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
     joints:
-      - shoulder_pan_joint
-      - shoulder_lift_joint
-      - elbow_pan_joint
-      - elbow_lift_joint
-      - wrist_pan_joint
-      - wrist_lift_joint
+      - joint_torso_to_torso_sensor_plat
