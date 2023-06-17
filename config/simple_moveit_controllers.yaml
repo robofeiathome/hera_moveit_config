@@ -1,11 +1,4 @@
 controller_list:
-  - name: gripper_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: True
-    joints:
-      - gripper_left_joint
-      - gripper_right_joint
   - name: manipulator_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
@@ -17,3 +10,10 @@ controller_list:
       - elbow_lift_joint
       - wrist_pan_joint
       - wrist_lift_joint
+  - name: gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - gripper_left_joint
+      - gripper_right_joint
