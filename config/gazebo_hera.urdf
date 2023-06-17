@@ -411,7 +411,7 @@
             </geometry>
         </visual>
     </link>
-    <joint name="joint_torso_to_head" type="revolute">
+    <joint name="joint_torso_to_head" type="fixed">
         <origin rpy="0 0 0" xyz="-0.06 0 0.6950000000000001" />
         <child link="head" />
         <parent link="torso" />
