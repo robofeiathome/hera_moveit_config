@@ -92,6 +92,7 @@
         <joint name="shoulder_lift_joint" value="-0.811"/>
         <joint name="shoulder_pan_joint" value="0"/>
         <joint name="wrist_lift_joint" value="0.8364"/>
+    </group_state>
     <group_state name="way_down" group="zed">
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.6"/>
     </group_state>
