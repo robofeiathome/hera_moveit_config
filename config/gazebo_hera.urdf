@@ -348,7 +348,7 @@
         <parent link="torso" />
         <child link="torso_sensor_plat" />
         <axis xyz="0 -1 0" />
-        <limit effort="30" lower="-1.0" upper="0.45" velocity="0.5" />
+        <limit effort="30" lower="-1.5" upper="0.1" velocity="0.5" />
     </joint>
     <transmission name="tran_torso_sensor_plat">
         <type>transmission_interface/SimpleTransmission</type>
@@ -477,7 +477,7 @@
         <child link="base_scan_back" />
     </joint>
     <!-- xtion -->
-    <link name="xtion">
+    <link name="xtion_link">
         <inertial>
             <mass value="0.01" />
             <inertia ixx="3.1083333333333334e-05" ixy="0.0" ixz="0.0" iyy="5.416666666666667e-06" iyz="0.0" izz="2.833333333333333e-05" />
@@ -496,22 +496,22 @@
             </geometry>
         </visual>
     </link>
-    <joint name="joint_torso_to_xtion" type="fixed">
+    <joint name="joint_torso_to_xtion_link" type="fixed">
         <origin rpy="0 0 0" xyz="0.215 0 -0.17" />
         <parent link="torso" />
-        <child link="xtion" />
+        <child link="xtion_link" />
     </joint>
-    <link name="xtion_depth" />
-    <joint name="joint_xtion_to_xtion_depth" type="fixed">
+    <link name="xtion_link_depth" />
+    <joint name="joint_xtion_link_to_xtion_link_depth" type="fixed">
         <origin rpy="0 0 0" xyz="0.0 0.049 0.016" />
-        <parent link="xtion" />
-        <child link="xtion_depth" />
+        <parent link="xtion_link" />
+        <child link="xtion_link_depth" />
     </joint>
-    <link name="xtion_optical" />
-    <joint name="joint_xtion_to_xtion_otptical" type="fixed">
+    <link name="xtion_link_optical" />
+    <joint name="joint_xtion_link_to_xtion_link_otptical" type="fixed">
         <origin rpy="-1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0" />
-        <parent link="xtion" />
-        <child link="xtion_optical" />
+        <parent link="xtion_link" />
+        <child link="xtion_link_optical" />
     </joint>
     <!-- zed -->
     <!-- <xacro:if value="${camera == 'zed'}">    
@@ -695,7 +695,7 @@
         <parent link="shoulder_lift_link" />
         <child link="elbow_pan_link" />
         <axis xyz="1 0 0" />
-        <limit effort="0" lower="-0.8" upper="0.8" velocity="5" />
+        <limit effort="0" lower="-1.57" upper="1.57" velocity="5" />
     </joint>
     <link name="elbow_lift_link">
         <visual>
@@ -755,7 +755,7 @@
         <parent link="elbow_lift_link" />
         <child link="wrist_pan_link" />
         <axis xyz="1 0 0" />
-        <limit effort="0" lower="-3.14" upper="3.14" velocity="5" />
+        <limit effort="0" lower="-1.57" upper="3.14" velocity="5" />
     </joint>
     <link name="wrist_lift_link">
         <visual>
