@@ -105,19 +105,19 @@
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
     <group_state name="place_bottom_shelf" group="manipulator">
-        <joint name="elbow_lift_joint" value="-0.73"/>
+        <joint name="elbow_lift_joint" value="-0.95"/>
         <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="2.85"/>
+        <joint name="shoulder_lift_joint" value="2.09"/>
         <joint name="shoulder_pan_joint" value="0"/>
-        <joint name="wrist_lift_joint" value="2.72"/>
+        <joint name="wrist_lift_joint" value="2.18"/>
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
     <group_state name="pick_center_shelf" group="manipulator">
-        <joint name="elbow_lift_joint" value="-0.73"/>
+        <joint name="elbow_lift_joint" value="-1.95"/>
         <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="2.85"/>
+        <joint name="shoulder_lift_joint" value="0.39"/>
         <joint name="shoulder_pan_joint" value="0"/>
-        <joint name="wrist_lift_joint" value="2.72"/>
+        <joint name="wrist_lift_joint" value="1.5"/>
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
