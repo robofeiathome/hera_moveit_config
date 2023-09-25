@@ -112,6 +112,14 @@
         <joint name="wrist_lift_joint" value="2.72"/>
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
+    <group_state name="pick_center_shelf" group="manipulator">
+        <joint name="elbow_lift_joint" value="-0.73"/>
+        <joint name="elbow_pan_joint" value="0"/>
+        <joint name="shoulder_lift_joint" value="2.85"/>
+        <joint name="shoulder_pan_joint" value="0"/>
+        <joint name="wrist_lift_joint" value="2.72"/>
+        <joint name="wrist_pan_joint" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper_ee" parent_link="wrist_lift_link" group="gripper" parent_group="manipulator"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
