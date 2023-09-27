@@ -103,11 +103,12 @@
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
     <group_state name="point" group="manipulator">
-        <joint name="elbow_lift_joint" value="-2.4108"/>
+        <joint name="elbow_lift_joint" value="-2.34"/>
         <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="-0.811"/>
+        <joint name="shoulder_lift_joint" value="-0.35"/>
         <joint name="shoulder_pan_joint" value="0"/>
-        <joint name="wrist_lift_joint" value="0.8364"/>
+        <joint name="wrist_lift_joint" value="1.16"/>
+        <joint name="wrist_pan_joint" value="0"/>
     </group_state>
     <group_state name="way_down" group="zed">
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.6"/>
