@@ -40,6 +40,22 @@
         <joint name="gripper_right_joint"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="garbage3" group="manipulator">
+        <joint name="elbow_lift_joint" value="-0.9157865643501282"/>
+        <joint name="elbow_pan_joint" value="0.03374757990241051"/>
+        <joint name="shoulder_lift_joint" value="2.6568548679351807"/>
+        <joint name="shoulder_pan_joint" value="-0.023009711876511574"/>
+        <joint name="wrist_lift_joint" value="1.0783885717391968"/>
+        <joint name="wrist_pan_joint" value="-0.07976700365543365"/>
+    </group_state>
+    <group_state name="place_bottom_shelf" group="manipulator">
+        <joint name="elbow_lift_joint" value="-1.6689711809158325"/>
+        <joint name="elbow_pan_joint" value="-0.003067961661145091"/>
+        <joint name="shoulder_lift_joint" value="2.0417284965515137"/>
+        <joint name="shoulder_pan_joint" value="0.0"/>
+        <joint name="wrist_lift_joint" value="2.8393986225128174"/>
+        <joint name="wrist_pan_joint" value="-0.004601942375302315"/>
+    </group_state>
     <group_state name="pocket_place" group="manipulator">
         <joint name="elbow_lift_joint" value="-1.245592474937439"/>
         <joint name="elbow_pan_joint" value="-1.0277671813964844"/>
@@ -146,14 +162,6 @@
         <joint name="shoulder_lift_joint" value="0.5641"/>
         <joint name="shoulder_pan_joint" value="0"/>
         <joint name="wrist_lift_joint" value="1.4756"/>
-        <joint name="wrist_pan_joint" value="0"/>
-    </group_state>
-    <group_state name="place_bottom_shelf" group="manipulator">
-        <joint name="elbow_lift_joint" value="-0.95"/>
-        <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="2.09"/>
-        <joint name="shoulder_pan_joint" value="0"/>
-        <joint name="wrist_lift_joint" value="2.18"/>
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
     <group_state name="pick_center_shelf" group="manipulator">
