@@ -31,8 +31,8 @@ controller_list:
       - gripper_right_joint
 initial:  # Define initial robot poses per group
   - group: manipulator
-    pose: reset
+    pose: attack
   - group: gripper
     pose: open
   - group: zed
-    pose: up
+    pose: center_shelf
