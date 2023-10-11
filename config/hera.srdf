@@ -40,6 +40,33 @@
         <joint name="gripper_right_joint"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="hold_bag" group="manipulator">
+        <joint name="elbow_lift_joint" value="-3.0035345554351807"/>
+        <joint name="elbow_pan_joint" value="0.23930101096630096"/>
+        <joint name="shoulder_lift_joint" value="-0.42951464653015137"/>
+        <joint name="shoulder_pan_joint" value="-0.13192234933376312"/>
+        <joint name="wrist_lift_joint" value="0.3098641335964203"/>
+        <joint name="wrist_pan_joint" value="0.1733398288488388"/>
+    </group_state>
+    <group_state name="place_table" group="manipulator">
+        <joint name="elbow_lift_joint" value="-0.8053399324417114"/>
+        <joint name="elbow_pan_joint" value="0.16106799244880676"/>
+        <joint name="shoulder_lift_joint" value="1.0277671813964844"/>
+        <joint name="shoulder_pan_joint" value="-0.04141748324036598"/>
+        <joint name="wrist_lift_joint" value="-0.5460971593856812"/>
+        <joint name="wrist_pan_joint" value="-0.1426602154970169"/>
+    </group_state>
+    <group_state name="place_counter" group="manipulator">
+        <joint name="elbow_lift_joint" value="-2.6660587787628174"/>
+        <joint name="elbow_pan_joint" value="-0.023009711876511574"/>
+        <joint name="shoulder_lift_joint" value="0.598252534866333"/>
+        <joint name="shoulder_pan_joint" value="-0.0015339808305725455"/>
+        <joint name="wrist_lift_joint" value="0.9357283115386963"/>
+        <joint name="wrist_pan_joint" value="-0.03374757990241051"/>
+    </group_state>
+    <group_state name="way_down" group="zed">
+        <joint name="joint_torso_to_torso_sensor_plat" value="-0.46786415576934814"/>
+    </group_state>
     <group_state name="soft_close" group="gripper">
         <joint name="gripper_left_joint" value="0.63"/>
         <joint name="gripper_right_joint" value="-0.63"/>
@@ -156,9 +183,6 @@
         <joint name="shoulder_pan_joint" value="0"/>
         <joint name="wrist_lift_joint" value="1.16"/>
         <joint name="wrist_pan_joint" value="0"/>
-    </group_state>
-    <group_state name="way_down" group="zed">
-        <joint name="joint_torso_to_torso_sensor_plat" value="-0.6"/>
     </group_state>
     <group_state name="place" group="manipulator">
         <joint name="elbow_lift_joint" value="-1.717"/>
