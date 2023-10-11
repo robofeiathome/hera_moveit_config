@@ -40,6 +40,38 @@
         <joint name="gripper_right_joint"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="place_kitchen_table" group="manipulator">
+        <joint name="elbow_lift_joint" value="-0.7685244083404541"/>
+        <joint name="elbow_pan_joint" value="0.015339808538556099"/>
+        <joint name="shoulder_lift_joint" value="1.1274758577346802"/>
+        <joint name="shoulder_pan_joint" value="-0.0076699042692780495"/>
+        <joint name="wrist_lift_joint" value="-0.3834952116012573"/>
+        <joint name="wrist_pan_joint" value="-0.02147573232650757"/>
+    </group_state>
+    <group_state name="place_counter" group="manipulator">
+        <joint name="elbow_lift_joint" value="0.21322333812713623"/>
+        <joint name="elbow_pan_joint" value="-0.02147573232650757"/>
+        <joint name="shoulder_lift_joint" value="2.230408191680908"/>
+        <joint name="shoulder_pan_joint" value="-0.003067961661145091"/>
+        <joint name="wrist_lift_joint" value="-0.4218447208404541"/>
+        <joint name="wrist_pan_joint" value="-0.010737866163253784"/>
+    </group_state>
+    <group_state name="place_dinner_table" group="manipulator">
+        <joint name="elbow_lift_joint" value="-1.3376312255859375"/>
+        <joint name="elbow_pan_joint" value="-0.003067961661145091"/>
+        <joint name="shoulder_lift_joint" value="0.5123496055603027"/>
+        <joint name="shoulder_pan_joint" value="-0.006135923322290182"/>
+        <joint name="wrist_lift_joint" value="-0.41724279522895813"/>
+        <joint name="wrist_pan_joint" value="-0.0076699042692780495"/>
+    </group_state>
+    <group_state name="place_livingroom_table" group="manipulator">
+        <joint name="elbow_lift_joint" value="-0.30833014845848083"/>
+        <joint name="elbow_pan_joint" value="-0.0015339808305725455"/>
+        <joint name="shoulder_lift_joint" value="2.3224470615386963"/>
+        <joint name="shoulder_pan_joint" value="-0.010737866163253784"/>
+        <joint name="wrist_lift_joint" value="0.24236896634101868"/>
+        <joint name="wrist_pan_joint" value="-0.02761165425181389"/>
+    </group_state>
     <group_state name="hold_bag" group="manipulator">
         <joint name="elbow_lift_joint" value="-3.0035345554351807"/>
         <joint name="elbow_pan_joint" value="0.23930101096630096"/>
