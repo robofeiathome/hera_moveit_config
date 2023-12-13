@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_manipulator_controller
+  - name: fake_arm_controller
     type: $(arg fake_execution_type)
     joints:
       - shoulder_pan_joint
@@ -13,26 +13,10 @@ controller_list:
     joints:
       - gripper_left_joint
       - gripper_right_joint
-  - name: fake_zed_controller
+  - name: fake_camera_controller
     type: $(arg fake_execution_type)
     joints:
       - joint_torso_to_torso_sensor_plat
-  - name: fake_all_motors_controller
-    type: $(arg fake_execution_type)
-    joints:
-      - joint_torso_to_torso_sensor_plat
-      - shoulder_pan_joint
-      - shoulder_lift_joint
-      - elbow_pan_joint
-      - elbow_lift_joint
-      - wrist_pan_joint
-      - wrist_lift_joint
-      - gripper_left_joint
-      - gripper_right_joint
 initial:  # Define initial robot poses per group
-  - group: manipulator
-    pose: reset
-  - group: gripper
-    pose: open
-  - group: zed
-    pose: up
+  - group: arm
+    pose: home
