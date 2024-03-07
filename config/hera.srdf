@@ -24,7 +24,7 @@
         <link name="gripper_right_link"/>
         <link name="gripper_right_end_link"/>
     </group>
-    <group name="zed">
+    <group name="head">
         <joint name="joint_torso_to_torso_sensor_plat"/>
     </group>
     <group name="all_motors">
@@ -40,7 +40,7 @@
         <joint name="gripper_right_joint"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <group_state name="way_way_down" group="zed">
+    <group_state name="way_way_down" group="head">
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.7930681109428406"/>
     </group_state>
     <group_state name="place_kitchen_table" group="manipulator">
@@ -99,7 +99,7 @@
         <joint name="wrist_lift_joint" value="0.9357283115386963"/>
         <joint name="wrist_pan_joint" value="-0.03374757990241051"/>
     </group_state>
-    <group_state name="way_down" group="zed">
+    <group_state name="way_down" group="head">
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.46786415576934814"/>
     </group_state>
     <group_state name="soft_close" group="gripper">
@@ -150,7 +150,7 @@
         <joint name="wrist_lift_joint" value="0.10277671366930008"/>
         <joint name="wrist_pan_joint" value="-0.3666214048862457"/>
     </group_state>
-    <group_state name="center_shelf" group="zed">
+    <group_state name="center_shelf" group="head">
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.1764077991247177"/>
     </group_state>
     <group_state name="garbage2" group="manipulator">
@@ -201,10 +201,10 @@
         <joint name="gripper_left_joint" value="0.8"/>
         <joint name="gripper_right_joint" value="-0.8"/>
     </group_state>
-    <group_state name="up" group="zed">
+    <group_state name="up" group="head">
         <joint name="joint_torso_to_torso_sensor_plat" value="0"/>
     </group_state>
-    <group_state name="down" group="zed">
+    <group_state name="down" group="head">
         <joint name="joint_torso_to_torso_sensor_plat" value="-0.3"/>
     </group_state>
     <group_state name="hold" group="manipulator">
