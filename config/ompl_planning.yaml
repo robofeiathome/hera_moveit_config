@@ -254,3 +254,5 @@ camera:
     - AITstar
     - ABITstar
     - BITstar
+  projection_evaluator: joints(joint_camera_tilt,joint_camera_pan)
+  longest_valid_segment_fraction: 0.005

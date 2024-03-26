@@ -22,4 +22,5 @@ controller_list:
     type: FollowJointTrajectory
     default: True
     joints:
-      - joint_torso_to_torso_sensor_plat
+      - joint_camera_pan
+      - joint_camera_tilt

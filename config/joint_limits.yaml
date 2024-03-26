@@ -28,7 +28,12 @@ joint_limits:
     max_velocity: 5
     has_acceleration_limits: false
     max_acceleration: 0
-  joint_torso_to_torso_sensor_plat:
+  joint_camera_pan:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: false
+    max_acceleration: 0
+  joint_camera_tilt:
     has_velocity_limits: true
     max_velocity: 0.5
     has_acceleration_limits: false

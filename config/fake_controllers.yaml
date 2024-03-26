@@ -13,10 +13,15 @@ controller_list:
     joints:
       - gripper_left_joint
       - gripper_right_joint
-  - name: fake_head_controller
+  - name: fake_camera_controller
     type: $(arg fake_execution_type)
     joints:
-      - joint_torso_to_torso_sensor_plat
+      - joint_camera_tilt
+      - joint_camera_pan
 initial:  # Define initial robot poses per group
   - group: arm
-    pose: home
+    pose: reset
+  - group: gripper
+    pose: soft_close
+  - group: camera
+    pose: up

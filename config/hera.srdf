@@ -23,131 +23,14 @@
         <joint name="gripper_right_joint"/>
         <joint name="gripper_right_end_joint"/>
     </group>
-    <group name="head">
-        <joint name="joint_torso_to_torso_sensor_plat"/>
+    <group name="camera">
+        <joint name="joint_camera_pan"/>
+        <joint name="joint_camera_tilt"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <group_state name="place_kitchen_table" group="arm">
-        <joint name="elbow_lift_joint" value="-0.7685244083404541"/>
-        <joint name="elbow_pan_joint" value="0.015339808538556099"/>
-        <joint name="shoulder_lift_joint" value="1.1274758577346802"/>
-        <joint name="shoulder_pan_joint" value="-0.0076699042692780495"/>
-        <joint name="wrist_lift_joint" value="-0.3834952116012573"/>
-        <joint name="wrist_pan_joint" value="-0.02147573232650757"/>
-    </group_state>
-    <group_state name="place_counter" group="arm">
-        <joint name="elbow_lift_joint" value="0.21322333812713623"/>
-        <joint name="elbow_pan_joint" value="-0.02147573232650757"/>
-        <joint name="shoulder_lift_joint" value="2.230408191680908"/>
-        <joint name="shoulder_pan_joint" value="-0.003067961661145091"/>
-        <joint name="wrist_lift_joint" value="-0.4218447208404541"/>
-        <joint name="wrist_pan_joint" value="-0.010737866163253784"/>
-    </group_state>
-    <group_state name="place_dinner_table" group="arm">
-        <joint name="elbow_lift_joint" value="-1.3376312255859375"/>
-        <joint name="elbow_pan_joint" value="-0.003067961661145091"/>
-        <joint name="shoulder_lift_joint" value="0.5123496055603027"/>
-        <joint name="shoulder_pan_joint" value="-0.006135923322290182"/>
-        <joint name="wrist_lift_joint" value="-0.41724279522895813"/>
-        <joint name="wrist_pan_joint" value="-0.0076699042692780495"/>
-    </group_state>
-    <group_state name="place_livingroom_table" group="arm">
-        <joint name="elbow_lift_joint" value="-0.30833014845848083"/>
-        <joint name="elbow_pan_joint" value="-0.0015339808305725455"/>
-        <joint name="shoulder_lift_joint" value="2.3224470615386963"/>
-        <joint name="shoulder_pan_joint" value="-0.010737866163253784"/>
-        <joint name="wrist_lift_joint" value="0.24236896634101868"/>
-        <joint name="wrist_pan_joint" value="-0.02761165425181389"/>
-    </group_state>
-    <group_state name="hold_bag" group="arm">
-        <joint name="elbow_lift_joint" value="-3.0035345554351807"/>
-        <joint name="elbow_pan_joint" value="0.23930101096630096"/>
-        <joint name="shoulder_lift_joint" value="-0.42951464653015137"/>
-        <joint name="shoulder_pan_joint" value="-0.13192234933376312"/>
-        <joint name="wrist_lift_joint" value="0.3098641335964203"/>
-        <joint name="wrist_pan_joint" value="0.1733398288488388"/>
-    </group_state>
-    <group_state name="place_table" group="arm">
-        <joint name="elbow_lift_joint" value="-0.8053399324417114"/>
-        <joint name="elbow_pan_joint" value="0.16106799244880676"/>
-        <joint name="shoulder_lift_joint" value="1.0277671813964844"/>
-        <joint name="shoulder_pan_joint" value="-0.04141748324036598"/>
-        <joint name="wrist_lift_joint" value="-0.5460971593856812"/>
-        <joint name="wrist_pan_joint" value="-0.1426602154970169"/>
-    </group_state>
-    <group_state name="place_counter" group="arm">
-        <joint name="elbow_lift_joint" value="-2.6660587787628174"/>
-        <joint name="elbow_pan_joint" value="-0.023009711876511574"/>
-        <joint name="shoulder_lift_joint" value="0.598252534866333"/>
-        <joint name="shoulder_pan_joint" value="-0.0015339808305725455"/>
-        <joint name="wrist_lift_joint" value="0.9357283115386963"/>
-        <joint name="wrist_pan_joint" value="-0.03374757990241051"/>
-    </group_state>
-    <group_state name="way_down" group="head">
-        <joint name="joint_torso_to_torso_sensor_plat" value="-0.46786415576934814"/>
-    </group_state>
     <group_state name="soft_close" group="gripper">
         <joint name="gripper_left_joint" value="0.63"/>
         <joint name="gripper_right_joint" value="-0.63"/>
-    </group_state>
-    <group_state name="place_bottom_shelf" group="arm">
-        <joint name="elbow_lift_joint" value="0.17180585861206055"/>
-        <joint name="elbow_pan_joint" value="-0.006135923322290182"/>
-        <joint name="shoulder_lift_joint" value="2.6261751651763916"/>
-        <joint name="shoulder_pan_joint" value="-0.013805827125906944"/>
-        <joint name="wrist_lift_joint" value="1.6306216716766357"/>
-        <joint name="wrist_pan_joint" value="-0.010737866163253784"/>
-    </group_state>
-    <group_state name="garbage3" group="arm">
-        <joint name="elbow_lift_joint" value="-0.9157865643501282"/>
-        <joint name="elbow_pan_joint" value="0.03374757990241051"/>
-        <joint name="shoulder_lift_joint" value="2.6568548679351807"/>
-        <joint name="shoulder_pan_joint" value="-0.023009711876511574"/>
-        <joint name="wrist_lift_joint" value="1.0783885717391968"/>
-        <joint name="wrist_pan_joint" value="-0.07976700365543365"/>
-    </group_state>
-    <group_state name="pocket_place" group="arm">
-        <joint name="elbow_lift_joint" value="-1.245592474937439"/>
-        <joint name="elbow_pan_joint" value="-1.0277671813964844"/>
-        <joint name="shoulder_lift_joint" value="0.41264083981513977"/>
-        <joint name="shoulder_pan_joint" value="-1.5033012628555298"/>
-        <joint name="wrist_lift_joint" value="-0.2929903268814087"/>
-        <joint name="wrist_pan_joint" value="-0.374291330575943"/>
-    </group_state>
-    <group_state name="pocket_up" group="arm">
-        <joint name="elbow_lift_joint" value="-0.8973788022994995"/>
-        <joint name="elbow_pan_joint" value="-0.7317088842391968"/>
-        <joint name="shoulder_lift_joint" value="-0.013805827125906944"/>
-        <joint name="shoulder_pan_joint" value="-1.2563302516937256"/>
-        <joint name="wrist_lift_joint" value="-0.6120583415031433"/>
-        <joint name="wrist_pan_joint" value="-0.3666214048862457"/>
-    </group_state>
-    <group_state name="pocket_down" group="arm">
-        <joint name="elbow_lift_joint" value="-2.440563440322876"/>
-        <joint name="elbow_pan_joint" value="-1.1489516496658325"/>
-        <joint name="shoulder_lift_joint" value="-0.006135923322290182"/>
-        <joint name="shoulder_pan_joint" value="-1.2593982219696045"/>
-        <joint name="wrist_lift_joint" value="0.10277671366930008"/>
-        <joint name="wrist_pan_joint" value="-0.3666214048862457"/>
-    </group_state>
-    <group_state name="center_shelf" group="head">
-        <joint name="joint_torso_to_torso_sensor_plat" value="-0.1764077991247177"/>
-    </group_state>
-    <group_state name="garbage2" group="arm">
-        <joint name="elbow_lift_joint" value="-2.0"/>
-        <joint name="elbow_pan_joint" value="0.0"/>
-        <joint name="shoulder_lift_joint" value="1.886796474456787"/>
-        <joint name="shoulder_pan_joint" value="0.0"/>
-        <joint name="wrist_lift_joint" value="1.4143303632736206"/>
-        <joint name="wrist_pan_joint" value="-0.026077674701809883"/>
-    </group_state>
-    <group_state name="garbage" group="arm">
-        <joint name="elbow_lift_joint" value="-2.589359760284424"/>
-        <joint name="elbow_pan_joint" value="0.0"/>
-        <joint name="shoulder_lift_joint" value="0.3021942377090454"/>
-        <joint name="shoulder_pan_joint" value="0.0"/>
-        <joint name="wrist_lift_joint" value="0.6"/>
-        <joint name="wrist_pan_joint" value="-0.02761165425181389"/>
     </group_state>
     <group_state name="reset" group="arm">
         <joint name="elbow_lift_joint" value="0"/>
@@ -181,11 +64,13 @@
         <joint name="gripper_left_joint" value="0.8"/>
         <joint name="gripper_right_joint" value="-0.8"/>
     </group_state>
-    <group_state name="up" group="head">
-        <joint name="joint_torso_to_torso_sensor_plat" value="0"/>
+    <group_state name="up" group="camera">
+        <joint name="joint_camera_pan" value="0"/>
+        <joint name="joint_camera_tilt" value="0"/>
     </group_state>
-    <group_state name="down" group="head">
-        <joint name="joint_torso_to_torso_sensor_plat" value="-0.3"/>
+    <group_state name="down" group="camera">
+        <joint name="joint_camera_pan" value="0"/>
+        <joint name="joint_camera_tilt" value="-0.4"/>
     </group_state>
     <group_state name="hold" group="arm">
         <joint name="elbow_lift_joint" value="-3.2602"/>
@@ -203,39 +88,16 @@
         <joint name="wrist_lift_joint" value="1.16"/>
         <joint name="wrist_pan_joint" value="0"/>
     </group_state>
-    <group_state name="place" group="arm">
-        <joint name="elbow_lift_joint" value="-1.717"/>
-        <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="0.5641"/>
-        <joint name="shoulder_pan_joint" value="0"/>
-        <joint name="wrist_lift_joint" value="1.4756"/>
-        <joint name="wrist_pan_joint" value="0"/>
-    </group_state>
-    <group_state name="pick_center_shelf" group="arm">
-        <joint name="elbow_lift_joint" value="-1.95"/>
-        <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="0.39"/>
-        <joint name="shoulder_pan_joint" value="0"/>
-        <joint name="wrist_lift_joint" value="1.5"/>
-        <joint name="wrist_pan_joint" value="0"/>
-    </group_state>
-    <group_state name="hold_left_down" group="arm">
-        <joint name="elbow_lift_joint" value="-2.4"/>
-        <joint name="elbow_pan_joint" value="0"/>
-        <joint name="shoulder_lift_joint" value="1.79"/>
-        <joint name="shoulder_pan_joint" value="1.55"/>
-        <joint name="wrist_lift_joint" value="3.12"/>
-        <joint name="wrist_pan_joint" value="0"/>
-    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper_ee" parent_link="wrist_lift_link" group="gripper" parent_group="arm"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="backrest_link" link2="base_link" reason="Never"/>
+    <disable_collisions link1="backrest_link" link2="base" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="base_scan_front" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="base_wheelBL" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="base_wheelBR" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="base_wheelFL" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="base_wheelFR" reason="Never"/>
+    <disable_collisions link1="backrest_link" link2="camera_link" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="elbow_lift_link" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="elbow_pan_link" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="head" reason="Never"/>
@@ -244,33 +106,33 @@
     <disable_collisions link1="backrest_link" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="backrest_link" link2="torso" reason="Adjacent"/>
-    <disable_collisions link1="backrest_link" link2="torso_sensor_plat" reason="Never"/>
-    <disable_collisions link1="backrest_link" link2="xtion" reason="Never"/>
-    <disable_collisions link1="base_link" link2="base_scan_front" reason="Adjacent"/>
-    <disable_collisions link1="base_link" link2="base_wheelBL" reason="Adjacent"/>
-    <disable_collisions link1="base_link" link2="base_wheelBR" reason="Adjacent"/>
-    <disable_collisions link1="base_link" link2="base_wheelFL" reason="Adjacent"/>
-    <disable_collisions link1="base_link" link2="base_wheelFR" reason="Adjacent"/>
-    <disable_collisions link1="base_link" link2="elbow_lift_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="elbow_pan_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="gripper_left_end_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="gripper_left_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="gripper_right_end_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="gripper_right_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head" reason="Never"/>
-    <disable_collisions link1="base_link" link2="manip_base_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="manip_support_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="shoulder_lift_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="shoulder_pan_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="torso" reason="Adjacent"/>
-    <disable_collisions link1="base_link" link2="torso_sensor_plat" reason="Never"/>
-    <disable_collisions link1="base_link" link2="wrist_lift_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="xtion" reason="Never"/>
+    <disable_collisions link1="backrest_link" link2="torso_sensor_platform" reason="Default"/>
+    <disable_collisions link1="base" link2="base_scan_front" reason="Adjacent"/>
+    <disable_collisions link1="base" link2="base_wheelBL" reason="Adjacent"/>
+    <disable_collisions link1="base" link2="base_wheelBR" reason="Adjacent"/>
+    <disable_collisions link1="base" link2="base_wheelFL" reason="Adjacent"/>
+    <disable_collisions link1="base" link2="base_wheelFR" reason="Adjacent"/>
+    <disable_collisions link1="base" link2="camera_link" reason="Never"/>
+    <disable_collisions link1="base" link2="elbow_lift_link" reason="Never"/>
+    <disable_collisions link1="base" link2="elbow_pan_link" reason="Never"/>
+    <disable_collisions link1="base" link2="gripper_left_end_link" reason="Never"/>
+    <disable_collisions link1="base" link2="gripper_left_link" reason="Never"/>
+    <disable_collisions link1="base" link2="gripper_right_end_link" reason="Never"/>
+    <disable_collisions link1="base" link2="gripper_right_link" reason="Never"/>
+    <disable_collisions link1="base" link2="head" reason="Never"/>
+    <disable_collisions link1="base" link2="manip_base_link" reason="Never"/>
+    <disable_collisions link1="base" link2="manip_support_link" reason="Never"/>
+    <disable_collisions link1="base" link2="shoulder_lift_link" reason="Never"/>
+    <disable_collisions link1="base" link2="shoulder_pan_link" reason="Never"/>
+    <disable_collisions link1="base" link2="torso" reason="Adjacent"/>
+    <disable_collisions link1="base" link2="torso_sensor_platform" reason="Never"/>
+    <disable_collisions link1="base" link2="wrist_lift_link" reason="Never"/>
+    <disable_collisions link1="base" link2="wrist_pan_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="base_wheelBL" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="base_wheelBR" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="base_wheelFL" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="base_wheelFR" reason="Never"/>
+    <disable_collisions link1="base_scan_front" link2="camera_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="elbow_lift_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="elbow_pan_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="gripper_left_end_link" reason="Never"/>
@@ -283,13 +145,13 @@
     <disable_collisions link1="base_scan_front" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="torso" reason="Never"/>
-    <disable_collisions link1="base_scan_front" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="base_scan_front" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="base_scan_front" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="base_scan_front" link2="xtion" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="base_wheelBR" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="base_wheelFL" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="base_wheelFR" reason="Never"/>
+    <disable_collisions link1="base_wheelBL" link2="camera_link" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="elbow_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="elbow_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="gripper_left_end_link" reason="Never"/>
@@ -302,12 +164,12 @@
     <disable_collisions link1="base_wheelBL" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="torso" reason="Default"/>
-    <disable_collisions link1="base_wheelBL" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="base_wheelBL" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelBL" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="base_wheelBL" link2="xtion" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="base_wheelFL" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="base_wheelFR" reason="Never"/>
+    <disable_collisions link1="base_wheelBR" link2="camera_link" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="elbow_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="elbow_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="gripper_left_end_link" reason="Never"/>
@@ -320,11 +182,11 @@
     <disable_collisions link1="base_wheelBR" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="torso" reason="Default"/>
-    <disable_collisions link1="base_wheelBR" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="base_wheelBR" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelBR" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="base_wheelBR" link2="xtion" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="base_wheelFR" reason="Never"/>
+    <disable_collisions link1="base_wheelFL" link2="camera_link" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="elbow_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="elbow_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="gripper_left_end_link" reason="Never"/>
@@ -337,10 +199,10 @@
     <disable_collisions link1="base_wheelFL" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="torso" reason="Never"/>
-    <disable_collisions link1="base_wheelFL" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="base_wheelFL" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelFL" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="base_wheelFL" link2="xtion" reason="Never"/>
+    <disable_collisions link1="base_wheelFR" link2="camera_link" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="elbow_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="elbow_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="gripper_left_end_link" reason="Never"/>
@@ -353,17 +215,21 @@
     <disable_collisions link1="base_wheelFR" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="torso" reason="Never"/>
-    <disable_collisions link1="base_wheelFR" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="base_wheelFR" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="base_wheelFR" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="base_wheelFR" link2="xtion" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="elbow_pan_link" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="head" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="manip_base_link" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="manip_support_link" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="shoulder_lift_link" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="shoulder_pan_link" reason="Never"/>
+    <disable_collisions link1="camera_link" link2="torso" reason="Default"/>
+    <disable_collisions link1="camera_link" link2="torso_sensor_platform" reason="Adjacent"/>
     <disable_collisions link1="elbow_lift_link" link2="elbow_pan_link" reason="Adjacent"/>
-    <disable_collisions link1="elbow_lift_link" link2="gripper_right_end_link" reason="Never"/>
     <disable_collisions link1="elbow_lift_link" link2="head" reason="Never"/>
     <disable_collisions link1="elbow_lift_link" link2="torso" reason="Never"/>
-    <disable_collisions link1="elbow_lift_link" link2="torso_sensor_plat" reason="Never"/>
     <disable_collisions link1="elbow_lift_link" link2="wrist_pan_link" reason="Adjacent"/>
-    <disable_collisions link1="elbow_lift_link" link2="xtion" reason="Never"/>
     <disable_collisions link1="elbow_pan_link" link2="gripper_left_end_link" reason="Never"/>
     <disable_collisions link1="elbow_pan_link" link2="gripper_left_link" reason="Never"/>
     <disable_collisions link1="elbow_pan_link" link2="gripper_right_end_link" reason="Never"/>
@@ -374,10 +240,9 @@
     <disable_collisions link1="elbow_pan_link" link2="shoulder_lift_link" reason="Adjacent"/>
     <disable_collisions link1="elbow_pan_link" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="elbow_pan_link" link2="torso" reason="Never"/>
-    <disable_collisions link1="elbow_pan_link" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="elbow_pan_link" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="elbow_pan_link" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="elbow_pan_link" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="elbow_pan_link" link2="xtion" reason="Never"/>
     <disable_collisions link1="gripper_left_end_link" link2="gripper_left_link" reason="Adjacent"/>
     <disable_collisions link1="gripper_left_end_link" link2="gripper_right_link" reason="Never"/>
     <disable_collisions link1="gripper_left_end_link" link2="wrist_lift_link" reason="Never"/>
@@ -398,30 +263,22 @@
     <disable_collisions link1="head" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="head" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="head" link2="torso" reason="Adjacent"/>
-    <disable_collisions link1="head" link2="torso_sensor_plat" reason="Never"/>
+    <disable_collisions link1="head" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="head" link2="wrist_lift_link" reason="Never"/>
     <disable_collisions link1="head" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="head" link2="xtion" reason="Never"/>
     <disable_collisions link1="manip_base_link" link2="manip_support_link" reason="Adjacent"/>
     <disable_collisions link1="manip_base_link" link2="shoulder_lift_link" reason="Never"/>
     <disable_collisions link1="manip_base_link" link2="shoulder_pan_link" reason="Adjacent"/>
     <disable_collisions link1="manip_base_link" link2="torso" reason="Never"/>
-    <disable_collisions link1="manip_base_link" link2="torso_sensor_plat" reason="Never"/>
-    <disable_collisions link1="manip_base_link" link2="xtion" reason="Never"/>
+    <disable_collisions link1="manip_base_link" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="manip_support_link" link2="shoulder_pan_link" reason="Never"/>
     <disable_collisions link1="manip_support_link" link2="torso" reason="Adjacent"/>
-    <disable_collisions link1="manip_support_link" link2="torso_sensor_plat" reason="Never"/>
-    <disable_collisions link1="manip_support_link" link2="xtion" reason="Never"/>
+    <disable_collisions link1="manip_support_link" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="shoulder_lift_link" link2="shoulder_pan_link" reason="Adjacent"/>
     <disable_collisions link1="shoulder_lift_link" link2="torso" reason="Never"/>
-    <disable_collisions link1="shoulder_lift_link" link2="torso_sensor_plat" reason="Never"/>
-    <disable_collisions link1="shoulder_lift_link" link2="xtion" reason="Never"/>
+    <disable_collisions link1="shoulder_lift_link" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="shoulder_pan_link" link2="torso" reason="Never"/>
-    <disable_collisions link1="shoulder_pan_link" link2="torso_sensor_plat" reason="Never"/>
-    <disable_collisions link1="shoulder_pan_link" link2="xtion" reason="Never"/>
-    <disable_collisions link1="torso" link2="torso_sensor_plat" reason="Adjacent"/>
-    <disable_collisions link1="torso" link2="xtion" reason="Default"/>
-    <disable_collisions link1="torso_sensor_plat" link2="wrist_pan_link" reason="Never"/>
-    <disable_collisions link1="torso_sensor_plat" link2="xtion" reason="Adjacent"/>
+    <disable_collisions link1="shoulder_pan_link" link2="torso_sensor_platform" reason="Never"/>
+    <disable_collisions link1="torso" link2="torso_sensor_platform" reason="Adjacent"/>
     <disable_collisions link1="wrist_lift_link" link2="wrist_pan_link" reason="Adjacent"/>
 </robot>
