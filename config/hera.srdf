@@ -282,4 +282,5 @@
     <disable_collisions link1="shoulder_pan_link" link2="torso_sensor_platform" reason="Never"/>
     <disable_collisions link1="torso" link2="torso_sensor_platform" reason="Adjacent"/>
     <disable_collisions link1="wrist_lift_link" link2="wrist_pan_link" reason="Adjacent"/>
+    <disable_collisions link1="gripper_left_end_link" link2="gripper_right_end_link" reason="User"/>
 </robot>
