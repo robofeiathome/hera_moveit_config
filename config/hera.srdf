@@ -90,7 +90,7 @@
     </group_state>
     <group_state name="way_down" group="camera">
         <joint name="joint_camera_pan" value="0"/>
-        <joint name="joint_camera_tilt" value="-0.57"/>
+        <joint name="joint_camera_tilt" value="-0.7"/>
     </group_state>
     <group_state name="hold" group="arm">
         <joint name="elbow_lift_joint" value="-3.2602"/>
