@@ -28,6 +28,30 @@
         <joint name="joint_camera_tilt"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="" group="arm">
+        <joint name="elbow_lift_joint" value="3.0541558265686035"/>
+        <joint name="elbow_pan_joint" value="0.07209710031747818"/>
+        <joint name="shoulder_lift_joint" value="0.5813787579536438"/>
+        <joint name="shoulder_pan_joint" value="0.01840776950120926"/>
+        <joint name="wrist_lift_joint" value="1.4112623929977417"/>
+        <joint name="wrist_pan_joint" value="0.03221359848976135"/>
+    </group_state>
+    <group_state name="luggage2" group="arm">
+        <joint name="elbow_lift_joint" value="-0.9157865643501282"/>
+        <joint name="elbow_pan_joint" value="0.061359234154224396"/>
+        <joint name="shoulder_lift_joint" value="2.5678839683532715"/>
+        <joint name="shoulder_pan_joint" value="0.05522330850362778"/>
+        <joint name="wrist_lift_joint" value="0.9802137613296509"/>
+        <joint name="wrist_pan_joint" value="-0.09970875084400177"/>
+    </group_state>
+    <group_state name="luggage" group="arm">
+        <joint name="elbow_lift_joint" value="-2.165980815887451"/>
+        <joint name="elbow_pan_joint" value="0.07056311517953873"/>
+        <joint name="shoulder_lift_joint" value="0.4494563937187195"/>
+        <joint name="shoulder_pan_joint" value="-0.00920388475060463"/>
+        <joint name="wrist_lift_joint" value="0.1702718734741211"/>
+        <joint name="wrist_pan_joint" value="0.01840776950120926"/>
+    </group_state>
     <group_state name="head_receptionist" group="camera">
         <joint name="joint_camera_tilt" value="-0.1871456652879715"/>
         <joint name="joint_camera_pan" value="-0.0015339808305725455"/>
