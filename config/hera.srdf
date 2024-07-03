@@ -80,6 +80,14 @@
         <joint name="wrist_lift_joint" value="1.4173983335494995"/>
         <joint name="wrist_pan_joint" value="0.004601942375302315"/>
     </group_state>
+    <group_state name="serve" group="arm">
+        <joint name="elbow_lift_joint" value="-1.9420197010040283"/>
+        <joint name="elbow_pan_joint" value="-0.006135923322290182"/>
+        <joint name="shoulder_lift_joint" value="0.47860202193260193"/>
+        <joint name="shoulder_pan_joint" value="-0.0015339808305725455"/>
+        <joint name="wrist_lift_joint" value="1.6030099391937256"/>
+        <joint name="wrist_pan_joint" value="0.0015339808305725455"/>
+    </group_state>
     <group_state name="soft_close" group="gripper">
         <joint name="gripper_left_joint" value="0.63"/>
         <joint name="gripper_right_joint" value="-0.63"/>
