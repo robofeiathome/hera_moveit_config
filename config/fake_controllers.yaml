@@ -14,7 +14,7 @@ controller_list:
       - gripper_left_joint
       - gripper_right_joint
   - name: fake_camera_controller
-    type: $(arg fake_execution_type)
+    type: "position_controllers/JointTrajectoryController"
     joints:
       - joint_camera_tilt
       - joint_camera_pan
