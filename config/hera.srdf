@@ -28,6 +28,70 @@
         <joint name="joint_camera_tilt"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="way_up" group="camera">
+        <joint name="joint_camera_tilt" value="0.4141748249530792"/>
+        <joint name="joint_camera_pan" value="0.012271846644580364"/>
+    </group_state>
+    <group_state name="point_to_camera" group="arm">
+        <joint name="elbow_lift_joint" value="0.6657477021217346"/>
+        <joint name="elbow_pan_joint" value="0.3942330777645111"/>
+        <joint name="shoulder_lift_joint" value="1.0431069135665894"/>
+        <joint name="shoulder_pan_joint" value="-0.8682331442832947"/>
+        <joint name="wrist_lift_joint" value="1.9957090616226196"/>
+        <joint name="wrist_pan_joint" value="0.3298058807849884"/>
+    </group_state>
+    <group_state name="pocket_place" group="arm">
+        <joint name="elbow_lift_joint" value="-1.245592474937439"/>
+        <joint name="elbow_pan_joint" value="-1.0277671813964844"/>
+        <joint name="shoulder_lift_joint" value="0.41264083981513977"/>
+        <joint name="shoulder_pan_joint" value="-1.5033012628555298"/>
+        <joint name="wrist_lift_joint" value="-0.2929903268814087"/>
+        <joint name="wrist_pan_joint" value="-0.374291330575943"/>
+    </group_state>
+    <group_state name="pocket_up" group="arm">
+        <joint name="elbow_lift_joint" value="-0.8973788022994995"/>
+        <joint name="elbow_pan_joint" value="-0.7317088842391968"/>
+        <joint name="shoulder_lift_joint" value="-0.013805827125906944"/>
+        <joint name="shoulder_pan_joint" value="-1.2563302516937256"/>
+        <joint name="wrist_lift_joint" value="-0.6120583415031433"/>
+        <joint name="wrist_pan_joint" value="-0.3666214048862457"/>
+    </group_state>
+    <group_state name="pocket_down" group="arm">
+        <joint name="elbow_lift_joint" value="-2.440563440322876"/>
+        <joint name="elbow_pan_joint" value="-1.1489516496658325"/>
+        <joint name="shoulder_lift_joint" value="-0.006135923322290182"/>
+        <joint name="shoulder_pan_joint" value="-1.2593982219696045"/>
+        <joint name="wrist_lift_joint" value="0.10277671366930008"/>
+        <joint name="wrist_pan_joint" value="-0.3666214048862457"/>
+    </group_state>
+    <group_state name="garbage3" group="arm">
+        <joint name="elbow_lift_joint" value="-0.9157865643501282"/>
+        <joint name="elbow_pan_joint" value="0.03374757990241051"/>
+        <joint name="shoulder_lift_joint" value="2.6568548679351807"/>
+        <joint name="shoulder_pan_joint" value="-0.023009711876511574"/>
+        <joint name="wrist_lift_joint" value="1.0783885717391968"/>
+        <joint name="wrist_pan_joint" value="-0.07976700365543365"/>
+    </group_state>
+    <group_state name="garbage2" group="arm">
+        <joint name="elbow_lift_joint" value="-2.0"/>
+        <joint name="elbow_pan_joint" value="0.0"/>
+        <joint name="shoulder_lift_joint" value="1.886796474456787"/>
+        <joint name="shoulder_pan_joint" value="0.0"/>
+        <joint name="wrist_lift_joint" value="1.4143303632736206"/>
+        <joint name="wrist_pan_joint" value="-0.026077674701809883"/>
+    </group_state>
+    <group_state name="garbage" group="arm">
+        <joint name="elbow_lift_joint" value="-2.589359760284424"/>
+        <joint name="elbow_pan_joint" value="0.0"/>
+        <joint name="shoulder_lift_joint" value="0.3021942377090454"/>
+        <joint name="shoulder_pan_joint" value="0.0"/>
+        <joint name="wrist_lift_joint" value="0.6"/>
+        <joint name="wrist_pan_joint" value="-0.02761165425181389"/>
+    </group_state>
+    <group_state name="head_stickler" group="camera">
+        <joint name="joint_camera_tilt" value="-0.5077476501464844"/>
+        <joint name="joint_camera_pan" value="-0.004601942375302315"/>
+    </group_state>
     <group_state name="place_bowl" group="arm">
         <joint name="elbow_lift_joint" value="-0.40957286953926086"/>
         <joint name="elbow_pan_joint" value="0.003067961661145091"/>
